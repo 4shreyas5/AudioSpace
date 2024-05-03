@@ -12,6 +12,7 @@ import Prompts from "@/components/common/Prompts";
 import { useRoom, useLocalPeer, usePeerIds, useHuddle01, useDataMessage } from "@huddle01/react/hooks";
 import AcceptRequest from "@/components/Modals/AcceptRequest";
 import useStore from "@/store/slices";
+import Chat from "@/components/Chat/Chat";
 
 const Home = ({ params }: { params: { roomId: string } }) => {
   const { push } = useRouter();

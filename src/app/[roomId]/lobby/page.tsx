@@ -76,6 +76,7 @@ const Lobby = ({ params }: { params: { roomId: string } }) => {
   return (
     <main className='flex h-screen flex-col items-center justify-center bg-lobby text-slate-100'>
       <div className='flex flex-col items-center justify-center gap-4 w-[26.25rem]'>
+        {/* Avatar  */}
         <div className='relative text-center flex items-center justify-center w-fit mx-auto'>
           <Image
             src={avatarUrl}
@@ -136,6 +137,7 @@ const Lobby = ({ params }: { params: { roomId: string } }) => {
             </div>
           </FeatCommon>
         </div>
+        {/* Display Name */}
         <div className='flex items-center w-full flex-col'>
           <div className='flex flex-col ml-72 justify-center w-full gap-1'>
             Set a display name
@@ -161,6 +163,7 @@ const Lobby = ({ params }: { params: { roomId: string } }) => {
             </div>
           </div>
         </div>
+        {/* Start Space */}
         <div className='flex items-center w-full'>
           {/*<button
             className='flex items-center justify-center bg-[#246BFD] text-slate-100 rounded-md p-2 mt-2 w-full'
